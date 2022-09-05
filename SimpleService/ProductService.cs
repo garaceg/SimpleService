@@ -4,13 +4,10 @@
     {
         private List<Product> Products = new List<Product>();
         public ProductService()
-        {
-            //List<Product> Products = new List<Product>();
-
+        {            
             // Read Text File, populates Products List
             string[] lines = System.IO.File.ReadAllLines(@"Products.txt");
-            lines = lines.Skip(1).ToArray();
-            
+            lines = lines.Skip(1).ToArray();            
 
             foreach (string line in lines)
             {

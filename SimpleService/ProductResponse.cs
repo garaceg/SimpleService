@@ -8,8 +8,11 @@ namespace SimpleService
 {
     public class ProductResponse
     {
-        public Product product { get; set; }
-        public string errorMessage { get; set; }
-        public bool sucess { get; set; }
+        public Product? product { get; set; }
+        public string? errorMessage { get; set; }
+        public bool sucess { get; set; }        
     }
+
+    
+
 }
